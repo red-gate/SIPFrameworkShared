@@ -37,8 +37,8 @@ task GenerateVersionInformation {
     $script:ReleaseNotes = [string] $Notes.Content
 
     # Establish assembly version number
-    $script:AssemblyVersion = $script:Version
-    $script:AssemblyFileVersion = $script:Version
+    $script:AssemblyVersion = [version] "$($script:Version.Major).0.0.0"
+    $script:AssemblyFileVersion = [version] "$script:Version.0"
 
     TeamCity-PublishArtifact "$ReleaseNotesPath"
 
