@@ -110,3 +110,5 @@ UpgradeLog*.XML
 *.7z
 *.msi
 *.DotSettings
+.build/paket.lock
+.paket/paket.exe
