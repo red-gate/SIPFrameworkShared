@@ -71,16 +71,11 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(SolutionDir)\MSBuild\Product.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
   </Target>
   -->
-  <!-- Fix the AssemblyVersion to 1.0.0.0, but let FileVersion move. -->
-  <Target Name="RedGate_UpdateAssemblyInfo" Condition="'$(Language)' == 'C#'">
-    <UpdateAssemblyInfo AssemblyVersion="1.0.0.0" AssemblyFileVersion="$(RedGate_FullVersion)" CompanyName="$(RedGate_CompanyName)" ProductName="$(RedGate_ProductName)" />
-  </Target>
 </Project>

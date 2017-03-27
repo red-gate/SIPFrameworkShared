@@ -1,4 +1,0 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<Import Project="$(SolutionDir)\MSBuild\Product.Shared.targets" />
-	<Import Project="$(SolutionDir)\MSBuild\SmartAssemblyPerProject\SmartAssemblyPerProject.targets" />
-</Project>
