@@ -71,9 +71,10 @@ task Init CreateFolders, GenerateVersionInformation
 
 # Synopsis: Compile the Visual Studio solution
 task Compile Init, UpdateVersionInfo, {
+    use 15.0 MSBuild
     try {
         exec {
-            & "C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild" `
+            & MSBuild `
                 $Solution `
                 /maxcpucount `
                 /nodereuse:false `
