@@ -1,12 +1,8 @@
-source https://api.nuget.org/v3/index.json
 source https://red-gate.pkgs.visualstudio.com/_packaging/Main/nuget/v3/index.json
 
-# You'll probably need nuget.exe in order to `nuget restore`, `nuget pack` and `nuget push`
+nuget RedGate.Build ~> 4.1
+
+source https://api.nuget.org/v3/index.json
+
+nuget Invoke-Build ~> 5.5 >= 5.5.5
 nuget Nuget.CommandLine ~> 4.7.1
-
-# https://github.com/nightroman/Invoke-Build
-# https://github.com/nightroman/Invoke-Build/wiki/Script-Tutorial
-nuget Invoke-Build ~> 5.4
-
-# Contains useful helper functions for powershell build scripts
-nuget RedGate.Build ~> 2.1
