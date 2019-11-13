@@ -210,4 +210,14 @@ namespace RedGate.SIPFrameworkShared
         /// </summary>
         new IObjectExplorerWatcher2 ObjectExplorerWatcher { get; }
     }
+
+    public interface ISsmsFunctionalityProvider8 : ISsmsFunctionalityProvider7
+    {
+        /// <summary>
+        /// A wrapper around SMO functions.
+        /// 
+        /// Every version of SSMS loads a different version of SMO. If you can't provide your own SMO implementation this provides a common interface across the one SSMS has loaded.
+        /// </summary>
+        new IServerManagementObjectsAdapter2 ServerManagementObjects { get; }
+    }
 }
