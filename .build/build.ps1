@@ -13,7 +13,7 @@ $OutputDir = "$RootDir\.output\$Configuration"
 $LogsDir = "$OutputDir\logs"
 $NugetPackageOutputDir = "$OutputDir\nugetpackages"
 $Solution = "$RootDir\SIPFrameworkShared.sln"
-$PublishNugetPackages = $env:TEAMCITY_VERSION -and $IsDefaultBranch
+$PublishNugetPackages = $env:TEAMCITY_VERSION
 $NugetExe = "$PSScriptRoot\packages\Nuget.CommandLine\tools\Nuget.exe" | Resolve-Path
 
 task CreateFolders {
