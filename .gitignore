@@ -112,3 +112,4 @@ UpgradeLog*.XML
 *.DotSettings
 .build/paket.lock
 .paket/paket.exe
+.vs/
