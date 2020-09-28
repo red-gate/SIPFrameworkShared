@@ -49,7 +49,6 @@
     <Compile Include="Connections\IConnectionManager.cs" />
     <Compile Include="ICommandManager.cs" />
     <Compile Include="IMainSsmsWindowProvider.cs" />
-    <Compile Include="IMenuService.cs" />
     <Compile Include="IServerManagementObjectsAdapter.cs" />
     <Compile Include="ISsmsInfo.cs" />
     <Compile Include="ISsmsMainWindow.cs" />

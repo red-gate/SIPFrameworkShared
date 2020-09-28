@@ -141,7 +141,6 @@ namespace RedGate.SIPFrameworkShared
         /// <summary>
         /// Provides a fluent API for building main menus.
         /// </summary>
-        IMenuService MenuBar { get; }
 
         IMainSsmsWindowProvider MainWindows { get; }
     }
